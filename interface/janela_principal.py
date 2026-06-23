@@ -10,6 +10,7 @@ from funcionalidades.organizador import organizar_pasta
 from funcionalidades.backup import realizar_backup
 from funcionalidades.processos import listar_processos
 from funcionalidades.limpeza import limpar_temporarios
+from funcionalidades.pastas import criar_pastas
 
 
 def iniciar():
@@ -272,6 +273,13 @@ def iniciar():
         width=BTN_W,
         command=abrir_limpeza
     ).grid(row=2, column=0, padx=10, pady=6)
+
+    ttk.Button(
+        botoes_frame,
+        text="📁 6. Criar pastas",
+        width=BTN_W,
+        command=criar_pastas
+    ).grid(row=2, column=1, padx=10, pady=6)
 
     # ================= CONSOLE =================
 
