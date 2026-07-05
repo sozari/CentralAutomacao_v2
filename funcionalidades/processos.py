@@ -5,10 +5,7 @@ import platform
 def listar_processos():
 
     comando = (
-        "Get-Process | "
-        "Sort-Object CPU -Descending | "
-        "Select-Object -First 15 Name, Id, CPU | "
-        "Format-Table -AutoSize"
+        "Get-Process | Sort-Object CPU -Descending | Select-Object -First 20 | Format-Table -AutoSize"
     )
 
     flags = (
